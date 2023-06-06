@@ -1,0 +1,16 @@
+@use "../../Foundation/variable" as *;
+
+.c-object{
+
+    &--hand{
+        display: none;
+        
+        @include breakpoint(pc){
+            display: block;
+            width: 50%;
+            max-width: 733px;
+            margin-top: 70px;
+            margin-left: auto;    
+        }
+    }
+}

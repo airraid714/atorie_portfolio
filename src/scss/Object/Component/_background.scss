@@ -1,0 +1,17 @@
+@use "../../Foundation/variable" as *;
+
+.c-background{
+
+    &--main{
+
+        @include breakpoint(pc){
+            height: 100vh;
+            position: fixed;
+            width: 100%;
+            display: block;
+            background: url(../../../image/jpg/メインエリア.jpg);
+            background-size: cover;
+    
+        }
+    }
+}
