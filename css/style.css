@@ -287,7 +287,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 img {
@@ -305,6 +305,20 @@ a {
   text-decoration: none;
 }
 
+.l-footer {
+  height: 477px;
+}
+
+.l-main {
+  width: 100%;
+  overflow-x: hidden;
+}
+@media (min-width: 768px) {
+  .l-main {
+    width: 392px;
+  }
+}
+
 @media (min-width: 1024px) {
   .c-background--main {
     height: 100vh;
@@ -315,19 +329,26 @@ a {
     background-size: cover;
   }
 }
+.c-background--cream {
+  background: #FFFBD3;
+}
 
 .c-logo--main {
   display: inline-block;
-  width: 80px;
+  width: 90px;
   position: fixed;
-  top: 20px;
+  top: 15px;
   left: 20px;
+  z-index: 100000;
 }
 @media (min-width: 1024px) {
   .c-logo--main {
     width: 200px;
     position: absolute;
   }
+}
+.c-logo--mono {
+  width: 235px;
 }
 
 .c-bird {
@@ -346,11 +367,98 @@ a {
     margin-left: auto;
   }
 }
+.c-object--flame-under {
+  width: 100%;
+  height: 70px;
+}
 
 .c-button--hamburger {
-  font-size: 0;
   width: 28px;
+  height: 28px;
+  position: fixed;
+  right: 20px;
+  top: 25px;
+  z-index: 100000;
+}
+.c-button--hamburger span {
+  display: block;
+  position: relative;
+  font-size: 0;
+  width: 100%;
   height: 2px;
   background: #f2f2f2;
+  border-radius: 5px;
+}
+.c-button--hamburger span::before, .c-button--hamburger span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #f2f2f2;
+  left: 0;
+  border-radius: 5px;
+}
+.c-button--hamburger span::before {
+  top: -10px;
+}
+.c-button--hamburger span::after {
+  top: 10px;
+}
+
+.c-button--contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 336px;
+  height: 63px;
+  background: #FFCD4C;
+  border-radius: 40px;
+  padding: 0 15px 0 56px;
+}
+.c-button--contact p {
+  font-size: 20px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  color: #363636;
+}
+.c-button--contact span {
+  display: block;
+  background: #FFFFFF;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.p-first-view {
+  position: relative;
+  background: #FFFFFF;
+}
+.p-first-view__main-bg {
+  height: 340px;
+}
+.p-first-view__main-bg img {
+  border-radius: 0 0 200px 200px;
+  height: 100%;
+}
+.p-first-view__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 300px;
+}
+.p-first-view__title {
+  width: 304px;
+  margin: 120px auto 0;
+}
+.p-first-view__title :last-child {
+  text-align: end;
+}
+.p-first-view__title p {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+.p-first-view__button {
+  margin: 42px auto;
 }
 /*# sourceMappingURL=style.css.map */

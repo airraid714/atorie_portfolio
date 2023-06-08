@@ -9,10 +9,15 @@
         position: fixed;
         top: 15px;
         left: 20px;
+        z-index: 100000;
 
         @include breakpoint(pc){
             width: 200px;
             position: absolute;    
         }
+    }
+
+    &--mono{
+        width: 235px;
     }
 }

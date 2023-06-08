@@ -9,7 +9,8 @@
 //----------------------------------
 // Layout
 // ---------------------------------
-
+@use "./Layout/footer";
+@use "./Layout/main";
  
  
 // ---------------------------------
@@ -29,7 +30,12 @@
 // ----------
 // Project
 // ----------
- 
+@use "../scss/Object/Project/about";
+@use "../scss/Object/Project/first-view";
+@use "../scss/Object/Project/inco";
+@use "../scss/Object/Project/message";
+@use "../scss/Object/Project/profile";
+@use "../scss/Object/Project/works";
 // ----------
 // Utility
 // ----------

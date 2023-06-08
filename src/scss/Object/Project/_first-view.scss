@@ -1,0 +1,45 @@
+@use "../../Foundation/variable" as *;
+
+.p-first-view{
+    position: relative;
+    background: $white-ff;
+
+    &__main-bg{
+        
+        height: 340px;
+
+        img{
+            border-radius: 0 0 200px 200px;
+            height: 100%;
+        }
+    }
+
+    &__logo{
+
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 300px;
+    }
+
+    &__title{
+        width: 304px;
+        margin: 120px auto 0;
+
+        
+        :last-child{
+            text-align: end;
+        }
+        
+        p{
+            font-family: $NSJP;
+            font-weight: bold;
+            font-size: 24px;
+
+        }
+    }
+
+    &__button{
+        margin: 42px auto;
+    }
+}

@@ -1,2 +1,11 @@
 @use "../Foundation/variable" as *;
 
+.l-main{
+
+    width: 100%;
+    overflow-x: hidden;
+
+    @include breakpoint(tablet){
+        width: 392px;
+    }
+}
