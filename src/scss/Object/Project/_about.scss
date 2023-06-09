@@ -8,17 +8,28 @@
         margin: 0 auto 78px;
     }
 
-    &__content1{
+    &__content{
         
         h3{
-            width: 227px;
-            height: 28px;
-            margin: 0 auto 30px;
+            margin: 0 auto 40px;
         }
 
         p{
             font-size: 20px;
-            margin: auto;
+            margin: 0 auto 60px;
+        }
+
+        figure{
+            width: 307px;
+            margin: 0 auto 16px;
+        }
+
+        &__item{
+
+            a{
+                margin: 0 0 10px 25px;
+            }
         }
     }
+
 }

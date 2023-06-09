@@ -1,0 +1,22 @@
+@use "../../Foundation/variable" as *;
+
+.c-title{
+
+    &--atorie{
+        width: 227px;
+    }
+
+    &--contents{
+        width: 195px;
+    }
+
+    &--inco{
+        display: inline-block;
+        width: 184px;
+    }
+
+    &--web{
+        display: inline-block;
+        width: 218px;
+    }
+}
