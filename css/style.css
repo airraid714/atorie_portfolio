@@ -307,7 +307,7 @@ a {
 
 p {
   font-family: "Noto Sans JP", sans-serif;
-  line-height: 2;
+  line-height: 2.3;
   max-width: 329px;
 }
 
@@ -325,6 +325,7 @@ p {
 .l-main {
   width: 100%;
   overflow-x: hidden;
+  background: gray;
 }
 @media (min-width: 768px) {
   .l-main {
@@ -344,6 +345,12 @@ p {
 }
 .c-background--cream {
   background: #FFFBD3;
+}
+.c-background--white {
+  background: #FFFFFF;
+}
+.c-background--gray {
+  background: #F7F8F8;
 }
 
 .c-logo--main {
@@ -380,9 +387,21 @@ p {
     margin-left: auto;
   }
 }
-.c-object--flame-under {
+.c-object--flame {
   width: 100%;
-  height: 70px;
+  height: 76px;
+}
+.c-object--cage {
+  background: url(../../../image/svg/かご.svg), no-repeat;
+  width: 358px;
+  height: 496px;
+}
+.c-object--maru {
+  display: block;
+  background: #FFFFFF;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
 .c-button--hamburger {
@@ -399,7 +418,7 @@ p {
   font-size: 0;
   width: 100%;
   height: 2px;
-  background: #f2f2f2;
+  background: linear-gradient(90deg, #9B9999 3.55%, rgba(217, 217, 217, 0.6) 17.41%, #FF9CBA 52.48%, #F4F152 86.25%, #FFFFFF 100%);
   border-radius: 5px;
 }
 .c-button--hamburger span::before, .c-button--hamburger span::after {
@@ -407,7 +426,7 @@ p {
   content: "";
   width: 100%;
   height: 2px;
-  background: #f2f2f2;
+  background: linear-gradient(90deg, #9B9999 3.55%, rgba(217, 217, 217, 0.6) 17.41%, #FF9CBA 52.48%, #F4F152 86.25%, #FFFFFF 100%);
   left: 0;
   border-radius: 5px;
 }
@@ -428,39 +447,99 @@ p {
   border-radius: 40px;
   padding: 0 15px 0 56px;
 }
-.c-button--contact p {
+.c-button--contact__text {
   font-size: 20px;
-  font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
   color: #363636;
 }
-.c-button--contact span {
-  display: block;
-  background: #FFFFFF;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.c-button--more, .c-button--more--orange {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 267px;
+  height: 63px;
+  background: #ACDCE7;
+  border-radius: 40px;
+  padding: 0 15px 0 75px;
+}
+.c-button--more__text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #363636;
+}
+.c-button--more--orange {
+  background: #FFCD4C;
+}
+
+.c-button--slider {
+  width: 238px;
+  display: flex;
+  justify-content: space-between;
+}
+.c-button--slider button {
+  width: 70px;
+  height: 60px;
+}
+
+.c-title--atorie {
+  width: 227px;
+}
+.c-title--contents {
+  width: 195px;
+}
+.c-title--inco {
+  display: inline-block;
+  width: 184px;
+}
+.c-title--web {
+  display: inline-block;
+  width: 218px;
+}
+
+.c-shadow--orange {
+  box-shadow: 0px 4px 4px #C3953D;
+}
+.c-shadow--blue {
+  box-shadow: 0px 4px 4px #77BCCC;
 }
 
 .p-about--site h2 {
   width: 372px;
   margin: 0 auto 78px;
 }
+.p-about--site__content :last-child {
+  margin-bottom: 0;
+}
 .p-about--site__content h3 {
-  width: 227px;
-  margin: 0 auto 30px;
+  margin: 0 auto 40px;
 }
 .p-about--site__content p {
   font-size: 20px;
-  margin: 0 auto 60px;
+  margin: 0 auto;
 }
 .p-about--site__content figure {
   width: 307px;
   margin: 0 auto 16px;
 }
+.p-about--site__content__item {
+  margin-bottom: 40px;
+}
+.p-about--site__content__item a {
+  margin: 0 0 10px 25px;
+}
+
+.p-about--me {
+  padding-bottom: 36px;
+}
+.p-about--me h2 {
+  width: 308px;
+  margin: 0 auto 40px;
+}
+
 .p-first-view {
   position: relative;
   background: #FFFFFF;
+  padding-bottom: 42px;
 }
 .p-first-view__main-bg {
   height: 340px;
@@ -486,8 +565,164 @@ p {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;
   font-size: 24px;
+  color: #363636;
 }
 .p-first-view__button {
-  margin: 42px auto;
+  margin: 42px auto 0;
+}
+
+.p-inco {
+  padding: 45px 0;
+}
+.p-inco h2 {
+  width: 308px;
+  margin: 0 auto 40px;
+}
+.p-inco__text {
+  width: 290px;
+  text-align: center;
+  font-size: 22px;
+  margin: 0 auto 60px;
+}
+.p-inco div {
+  margin: 0 auto 60px;
+  position: relative;
+}
+.p-inco div figure {
+  width: 274px;
+  height: 244px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 37px;
+}
+.p-inco div figure img {
+  height: 100%;
+  border-radius: 3px;
+}
+.p-inco__button {
+  margin: auto;
+}
+
+.p-message {
+  padding: 15px 0 67px;
+}
+.p-message h2 {
+  width: 180px;
+  margin: 0 auto 38px;
+}
+.p-message__text, .p-message__text--2 {
+  font-size: 20px;
+  width: 332px;
+  margin: auto;
+}
+.p-message__text--2 {
+  margin: 10px auto 38px;
+}
+.p-message figure {
+  width: 341px;
+  margin: -20px auto 0;
+}
+.p-message__button {
+  margin: auto;
+}
+
+.p-profile {
+  padding: 60px 0;
+  width: 336px;
+  border-radius: 20px;
+  background: #F7F8F8;
+  margin: 0 auto 40px;
+}
+.p-profile h3 {
+  width: 182px;
+  height: 30px;
+  margin: 0 auto 42px;
+}
+.p-profile figure {
+  width: 270px;
+  height: 270px;
+  margin: 0 auto 40px;
+}
+.p-profile ul {
+  text-align: center;
+}
+.p-profile li {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.p-profile li p .p-profile__text {
+  font-size: 20px;
+}
+
+.p-works {
+  padding: 25px 0 45px;
+}
+.p-works h2 {
+  width: 345px;
+  height: 72px;
+  margin: 0 auto 30px;
+}
+.p-works__text-1 {
+  width: 240px;
+  font-size: 20px;
+  margin: 0 auto 47px;
+}
+.p-works__text-2 {
+  width: 330px;
+  font-size: 20px;
+  margin: 0 auto 44px;
+}
+.p-works__button {
+  margin: 0 auto 56px;
+}
+
+.p-skill article {
+  padding: 60px 0;
+  width: 336px;
+  border-radius: 20px;
+  background: #F7F8F8;
+  margin: 0 auto 40px;
+}
+.p-skill article h3 {
+  width: 182px;
+  height: 30px;
+  margin: 0 auto 42px;
+}
+.p-skill article .p-skill__web li {
+  width: 300px;
+  height: 150px;
+  padding: 0 15px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin: 0 auto 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.p-skill article .p-skill__web li figure {
+  width: 74px;
+  height: 74px;
+}
+.p-skill article .p-skill__web li p {
+  font-size: 13px;
+  width: 180px;
+  font-weight: bold;
+}
+.p-skill article .p-skill__inco {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.p-skill article .p-skill__inco li figure {
+  width: 270px;
+  height: 230px;
+}
+.p-skill article .p-skill__button {
+  margin: 30px auto 0;
+}
+
+.u-margin--b--135 {
+  margin-bottom: 135px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+@use "../../Foundation/variable" as *;
+
+.c-shadow{
+    
+    &--orange{
+        box-shadow: 0px 4px 4px #C3953D;
+    }
+
+    &--blue{
+        box-shadow: 0px 4px 4px #77BCCC;
+    }
+    
+}

@@ -4,8 +4,9 @@
 
     width: 100%;
     overflow-x: hidden;
+    background: gray;
+    max-width: 392px;
 
     @include breakpoint(tablet){
-        width: 392px;
     }
 }

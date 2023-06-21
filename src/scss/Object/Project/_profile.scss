@@ -1,0 +1,36 @@
+@use "../../Foundation/variable" as *;
+
+.p-profile{
+
+    padding: 60px 0;
+    width: 336px;
+    border-radius: 20px;
+    background:  $gray-F7;
+    margin: 0 auto 40px;
+
+    h3{
+       width: 182px;
+       height: 30px;    
+       margin: 0 auto 42px; 
+    }
+
+    figure{
+        width: 270px;
+        height: 270px;
+        margin: 0 auto 40px;
+    }
+
+    ul{
+        text-align: center;
+
+    }
+
+    li{
+        font-size: 22px;
+        margin-bottom: 30px;
+
+        p .p-profile__text{
+            font-size: 20px;
+        }
+    }
+}

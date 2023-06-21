@@ -3,6 +3,7 @@
 .p-first-view{
     position: relative;
     background: $white-ff;
+    padding-bottom: 42px;
 
     &__main-bg{
         
@@ -35,11 +36,12 @@
             font-family: $NSJP;
             font-weight: bold;
             font-size: 24px;
+            color: $black-36;
 
         }
     }
 
     &__button{
-        margin: 42px auto;
+        margin: 42px auto 0;
     }
 }

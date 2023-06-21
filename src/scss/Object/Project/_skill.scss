@@ -1,0 +1,74 @@
+@use "../../Foundation/variable" as *;
+
+.p-skill{
+
+    article{
+        padding: 60px 0;
+        width: 336px;
+        border-radius: 20px;
+        background:  $gray-F7;
+        margin: 0 auto 40px;
+    
+        h3{
+            width: 182px;
+            height: 30px;
+            margin: 0 auto 42px; 
+        }
+
+        .p-skill__web{
+
+            li{
+                width: 300px;
+                height: 150px;
+                padding: 0 15px;
+                background: $white-ff;
+                border-radius: 20px;
+                margin: 0 auto 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                figure{
+                    width: 74px;
+                    height: 74px;
+                }
+
+                p{
+                    font-size: 13px;
+                    width: 180px;
+                    font-weight: bold;
+                }
+    
+    
+            }
+        
+
+        }
+
+        .p-skill__inco{
+            display: flex;
+            justify-content: center;
+            overflow-x: hidden;
+    
+            li{
+                figure{
+                    width: 270px;
+                    height: 230px;
+                }
+            }
+    
+    
+        }
+        
+        .p-skill__button{
+
+            margin:  30px auto 0;
+        }
+    
+    
+    }
+
+
+
+
+}

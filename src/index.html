@@ -11,8 +11,9 @@
   <body>
     <div class="c-background--main"><!--PC版の背景ゾーン-->
       <a href="#" class="c-logo--main"><img src="./image/svg/logo_color.svg"></a>
-      <figure class="c-object--hand"><img src="./image/png/スマホと手.png"></figure>
-    </div> 
+      
+    </div>
+    <figure class="c-object--hand"><img src="./image/png/スマホと手.png"></figure> 
     <main class="l-main">
       <button class="c-button--hamburger">
         <span>メニューボタン</span>
@@ -29,15 +30,15 @@
           <p>クリエイティブ～</p>
         </div>
 
-        <a class="c-button--contact p-first-view__button">
-          <p>お問い合わせはこちら</p>
-          <span></span>
+        <a class="c-button--contact p-first-view__button c-shadow--orange c-animation--push">
+          <p class="c-button--contact__text">お問い合わせはこちら</p>
+          <span class="c-object--maru"></span>
         </a>
       </article>
-      <div class="c-object--flame-under"><img src="./image/png/縁下.png"></div>
+      <div class="c-object--flame u-margin--b--135"><img src="./image/png/縁下.png"></div>
 
-      <div class="c-object--flame-under"><img src="./image/png/縁上.png"></div>
-      <article class="p-about--site">
+      <div class="c-object--flame"><img src="./image/png/縁上.png"></div>
+      <article class="p-about--site c-background--white">
         <h2><img src="./image/png/セクションタイトル.png"></h2>
         
         <div class="p-about--site__content">
@@ -50,53 +51,189 @@
         <div class="p-about--site__content">
           <h3 class="c-title--contents"><img src="./image/png/あとりえのコンテンツ.png"></h3>
           <div class="p-about--site__content__item">
-            <a class="c-title--inco"><img src="./image/png/わが家のいんこ.png"></a>
+            <a href="#" class="c-title--inco"><img src="./image/png/わが家のいんこ.png"></a>
             <p>かわいいインコの画像や動画が閲覧できます。鳥好きさんも、そうでない方も是非癒やされていってください♪</p>
           </div>
           <div class="p-about--site__content__item">
-            <a class="c-title--web"><img src="./image/png/かい主のWeb制作.png"></a>
+            <a href="#" class="c-title--web"><img src="./image/png/かい主のWeb制作.png"></a>
             <p>これまでに携ってきたWeb制作物をご覧いただけます。実案件だけでなく趣味で作ったものもUPしていきますので、よければ見ていってください♪</p>
           </div>
         </div>
 
-        
-
       </article>
-      <div class="c-object--flame-under"><img src="./image/png/縁下.png"></div>
+      <div class="c-object--flame u-margin--b--135"><img src="./image/png/縁下.png"></div>
 
-      <div class="c-object--flame-under"><img src="./image/png/縁上_黃.png"></div>
-      <article class="p-about--me">
+      <div class="c-object--flame"><img src="./image/png/縁上_黃.png"></div>
+      <article class="p-about--me c-background--cream">
 
-        <section class="p-profile">
+        <h2><img src="./image/png/飼い主について.png"></h2>
 
+        <section class="p-profile c-background--gray">
+
+          <h3><img src="./image/png/プロフィール.png"></h3>
+
+          <figure><img src="./image/png/自画像.png"></figure>
+
+          <ul>
+            <li>
+              <p>
+                【名前】
+                <br>
+                まっちん
+              </p>    
+            </li>
+            <li>
+              <p>
+                【いんこ歴】
+                <br>
+                ３年
+                <br>
+                これまで飼育した数９羽
+              </p>
+            </li>
+            <li>
+              <p>
+                【Web制作歴】
+                <br>
+                １年
+                <br>
+                <span class="p-profile__text">WordPressオリジナルテーマ制作</span>
+              </p>
+            </li>
+            <li>
+              <p>
+                【普段やっていること】
+                <br>
+                <span class="p-profile__text">エンジニアリングスクール</span>
+                <br>
+                <span class="p-profile__text">「RaiseTech」内部運営サポーター</span>
+              </p>
+            </li>
+          </ul>
         </section>
 
         <section class="p-skill">
+          <article>
+            <h3><img src="./image/png/Web制作スキル.png"></h3>
 
-          <article class="p-skill__web"></article>
-          <article class="p-skill__inco"></article>
+            <ul class="p-skill__web">
+              <li>
+                <figure><img src="./image/svg/HTMLとCSSの.svg"></figure>
+                <p>
+                  HTML/CSS
+                  <br>
+                  CSS設計にFLOCSSを採用保守運用を見据えたサイト制作
+                </p>
+              </li>
+              <li>
+                <figure><img src="./image/svg/JSアイコン.svg"></figure>
+                <p>
+                  JavaScript/jQuery
+                  <br>
+                  を使用したアニメーションや機能の実装
+                </p>
+              </li>
+              <li>
+                <figure><img src="./image/svg/Githubアイコン.svg"></figure>
+                <p>
+                  静的サイトにWordPressを導入
+                  <br>
+                  Githubを用いたチーム開発
+                </p>
+              </li>
+              <li>
+                <figure><img src="./image/svg/デザインツールアイコン.svg"></figure>
+                <p>
+                  Illustrator<br>
+                  Photoshop<br>
+                  Figma<br>
+                  でのデザインの作成
+                </p>
+              </li>
+            </ul>
+
+          </article>
+          <article>
+            <h3><img src="./image/png/いんこスキル.png"></h3>
+            <ul class="p-skill__inco"> <!--スライダーの実装-->
+              <li>
+                <figure><img src="./image/png/孵化・巣上げ.png"></figure>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="p-skill__button c-button--slider">
+              <button><img src="./image/png/戻る.png"></button>
+              <button><img src="./image/png/次へ.png"></button>
+            </div>
+          </article>
   
         </section>
   
       </article>
-      <div class="c-object--flame-under"><img src="./image/png/縁下_黃.png"></div>
+      <div class="c-object--flame u-margin--b--135"><img src="./image/png/縁下_黃.png"></div>
 
 
-      <div class="c-object--flame-under"><img src="./image/png/縁上.png"></div>
-      <article class="p-inco">
-
+      <div class="c-object--flame"><img src="./image/png/縁上.png"></div>
+      <article class="p-inco c-background--white">
+        <h2><img src="./image/png/わが家のいんこ.png"></h2>
+        <p class="p-inco__text">
+          わが家のいんこたちの
+          <br>
+          かわいい写真を大公開！
+        </p>
+        <div class="c-object--cage">
+          <figure>
+            <img src="./image/png/わが家のいんこ_秒数で入れ替わる動画.png">
+          </figure>  
+        </div>
+        <p class="p-inco__text">
+          日常にほっこりする
+          <br>
+          いんこたちの様子をどうぞ♪
+        </p>
+        <a class="c-button--more p-inco__button c-shadow--blue">
+          <p class="c-button--more__text">もっとみる</p>
+          <span class="c-object--maru"></span>
+        </a>
       </article>
-      <div class="c-object--flame-under"><img src="./image/png/縁下.png"></div>
+      <div class="c-object--flame"><img src="./image/png/縁下.png"></div>
 
-      <div class="c-object--flame-under"><img src="./image/png/縁上_黃.png"></div>
-      <article class="p-works">
-
+      <div class="c-object--flame"><img src="./image/png/縁上_黃.png"></div>
+      <article class="p-works c-background--cream">
+        <h2><img src="./image/png/飼い主のWeb制作.png"></h2>
+        <p class="p-works__text-1">私が作ったWebサイトやデザインをお見せします！</p>
+        <div>
+          
+        </div>
+        <a class="p-works__button c-button--more--orange c-shadow--orange">
+          <p class="c-button--more__text">もっとみる</p>
+          <span class="c-object--maru"></span>
+        </a>
+        <p class="p-works__text-2">
+          学習中からコーディングが楽しくて仕方がなかった私ですが、実案件を通じてデザインにも興味を持ち学習を始めました！
+          <br>
+          お客様の要望に幅広くお応えできるようにこれからもスキルを身に着けていきます！
+        </p>
       </article>
-      <div class="c-object--flame-under"><img src="./image/png/縁下_黃.png"></div>
+      <div class="c-object--flame u-margin--b--135"><img src="./image/png/縁下_黃.png"></div>
 
-      <div class="c-object--flame-under"><img src="./image/png/縁上.png"></div>
-      <article class="p-message">
-
+      <div class="c-object--flame"><img src="./image/png/縁上.png"></div>
+      <article class="p-message c-background--white">
+        <h2><img src="./image/png/最後に.png"></h2>
+        <p class="p-message__text">
+          最後までお付き合いいただき、ありがとうございます！これからもWEB制作の学習に取り組み、たくさんの素敵なサイトをつくっていきたいと思っています。
+        </p>
+        <figure><img src="./image/png/インコ画像.png"></figure>
+        <p class="p-message__text--2">
+          なお、制作の見積もりや、お仕事のご依頼に関するご相談も承っております。お気軽にお問い合わせください。
+        </p>
+        <a class="c-button--contact p-message__button c-shadow--orange">
+          <p class="c-button--contact__text">お問い合わせはこちら</p>
+          <span class="c-object--maru"></span>
+        </a>
       </article>
 
       <footer class="l-footer c-background--cream">

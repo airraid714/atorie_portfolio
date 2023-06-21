@@ -27,6 +27,8 @@
 @use "../scss/Object/Component/object";
 @use "../scss/Object/Component/button";
 @use "../scss/Object/Component/title";
+@use "../scss/Object/Component/shadow";
+@use "../scss/Object/Component/animation";
 
 // ----------
 // Project
@@ -37,8 +39,9 @@
 @use "../scss/Object/Project/message";
 @use "../scss/Object/Project/profile";
 @use "../scss/Object/Project/works";
+@use "../scss/Object/Project/skill";
 // ----------
 // Utility
 // ----------
-
+@use "../scss/Object/Utility/margin";
 
