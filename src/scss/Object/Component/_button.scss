@@ -9,6 +9,12 @@
     top: 25px;
     z-index: 100000;
 
+    @include breakpoint(pc){
+        right: auto;
+        top: auto;
+        margin: 35px 0 0 330px;
+    }
+
     span{
         display: block;
         position: relative;
@@ -26,7 +32,7 @@
             background: linear-gradient(90deg, #9B9999 3.55%, rgba(217, 217, 217, 0.6) 17.41%, #FF9CBA 52.48%, #F4F152 86.25%, #FFFFFF 100%);
             left: 0;
             border-radius: 5px;
-    
+            transition: all .3s;
 
         }
         &::before{
@@ -37,6 +43,26 @@
             top: 10px;
 
         }
+    }
+
+    &.is-open{
+
+        span{
+
+            background: none;
+
+            &::before,&::after{
+                top: 0;
+            }
+            &::before{
+                transform: rotate(40deg);
+            }
+            &::after{
+                transform: rotate(-40deg);
+            }
+    
+        }
+
     }
 
 }

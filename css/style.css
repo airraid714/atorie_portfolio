@@ -289,6 +289,11 @@ body {
   height: 100%;
   overflow-x: hidden;
 }
+@media (min-width: 1024px) {
+  body {
+    overflow-y: hidden;
+  }
+}
 
 img {
   width: 100%;
@@ -311,6 +316,10 @@ p {
   max-width: 329px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 .l-footer {
   height: 120px;
   display: flex;
@@ -326,11 +335,48 @@ p {
   width: 100%;
   overflow-x: hidden;
   background: gray;
+  max-width: 392px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .l-main {
-    width: 392px;
+    position: relative;
+    top: 22px;
+    left: 105px;
+    border-radius: 65px;
+    height: 750px;
+    background: none;
   }
+  .l-main::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .l-container {
+    width: 755px;
+    height: 800px;
+    overflow-y: scroll;
+    position: absolute;
+    right: 0;
+    top: 5%;
+    background: url(../../image/png/スマホと手.png);
+    background-size: cover;
+  }
+  .l-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.l-sidebar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  transition: 0.3s;
+  z-index: 1000;
 }
 
 @media (min-width: 1024px) {
@@ -351,6 +397,9 @@ p {
 }
 .c-background--gray {
   background: #F7F8F8;
+}
+.c-background--sidebar {
+  background: #6C6C6C;
 }
 
 .c-logo--main {
@@ -381,10 +430,10 @@ p {
 @media (min-width: 1024px) {
   .c-object--hand {
     display: block;
-    width: 50%;
-    max-width: 733px;
-    margin-top: 70px;
-    margin-left: auto;
+    width: 45%;
+    position: fixed;
+    right: 6%;
+    top: 7%;
   }
 }
 .c-object--flame {
@@ -412,6 +461,13 @@ p {
   top: 25px;
   z-index: 100000;
 }
+@media (min-width: 1024px) {
+  .c-button--hamburger {
+    right: auto;
+    top: auto;
+    margin: 35px 0 0 330px;
+  }
+}
 .c-button--hamburger span {
   display: block;
   position: relative;
@@ -429,12 +485,25 @@ p {
   background: linear-gradient(90deg, #9B9999 3.55%, rgba(217, 217, 217, 0.6) 17.41%, #FF9CBA 52.48%, #F4F152 86.25%, #FFFFFF 100%);
   left: 0;
   border-radius: 5px;
+  transition: all 0.3s;
 }
 .c-button--hamburger span::before {
   top: -10px;
 }
 .c-button--hamburger span::after {
   top: 10px;
+}
+.c-button--hamburger.is-open span {
+  background: none;
+}
+.c-button--hamburger.is-open span::before, .c-button--hamburger.is-open span::after {
+  top: 0;
+}
+.c-button--hamburger.is-open span::before {
+  transform: rotate(40deg);
+}
+.c-button--hamburger.is-open span::after {
+  transform: rotate(-40deg);
 }
 
 .c-button--contact {
@@ -484,16 +553,31 @@ p {
 .c-title--atorie {
   width: 227px;
 }
+.c-title--about-site--side {
+  width: 180px;
+}
 .c-title--contents {
   width: 195px;
+}
+.c-title--about-me--side {
+  width: 140px;
 }
 .c-title--inco {
   display: inline-block;
   width: 184px;
 }
+.c-title--inco--side {
+  width: 140px;
+}
 .c-title--web {
   display: inline-block;
   width: 218px;
+}
+.c-title--web--side {
+  width: 163px;
+}
+.c-title--contact--side {
+  width: 192px;
 }
 
 .c-shadow--orange {
@@ -501,6 +585,17 @@ p {
 }
 .c-shadow--blue {
   box-shadow: 0px 4px 4px #77BCCC;
+}
+.c-shadow--gray {
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.c-animation--push {
+  transition: all 0.2s;
+}
+.c-animation--push:hover {
+  transform: translateY(4px);
+  box-shadow: none;
 }
 
 .p-about--site h2 {
@@ -699,6 +794,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .p-skill article .p-skill__web li figure {
   width: 74px;
@@ -712,7 +808,7 @@ p {
 .p-skill article .p-skill__inco {
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .p-skill article .p-skill__inco li figure {
   width: 270px;
@@ -720,6 +816,42 @@ p {
 }
 .p-skill article .p-skill__button {
   margin: 30px auto 0;
+}
+
+.p-navigation--sidebar {
+  width: 212px;
+  margin: auto;
+}
+.p-navigation--sidebar li {
+  margin-bottom: 35px;
+}
+
+.p-card--works__img {
+  width: 365px;
+  height: 240px;
+  background: url(../../../image/png/PC_works.png);
+  background-size: cover;
+  margin: 0 auto 32px;
+  position: relative;
+}
+.p-card--works__img img {
+  width: 280px;
+  height: 190px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.p-card--works__title {
+  font-size: 24px;
+  margin: 0 auto 36px;
+  width: 267px;
+  text-align: center;
+}
+.p-card--works__button {
+  margin: 0 auto 56px;
 }
 
 .u-margin--b--135 {

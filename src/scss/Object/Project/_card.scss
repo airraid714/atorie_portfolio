@@ -1,0 +1,36 @@
+@use "../../Foundation/variable" as *;
+
+.p-card{
+
+    &--works{
+        &__img{
+            width: 365px;
+            height: 240px;
+            background: url(../../../image/png/PC_works.png);
+            background-size: cover;
+            margin: 0 auto 32px;
+            position: relative;
+
+            img{
+                width:280px;
+                height:190px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 10px;
+                object-fit: contain;
+            }
+        }
+
+        &__title{
+            font-size: 24px;
+            margin: 0 auto 36px;
+            width: 267px;
+            text-align: center;
+        }
+
+        &__button{
+            margin: 0 auto 56px;
+        }
+    }
+}

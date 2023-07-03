@@ -11,6 +11,10 @@ body{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    
+    @include breakpoint(pc){
+        overflow-y: hidden;
+    }
 }
 img{
     width: 100%;
@@ -28,4 +32,7 @@ p{
     font-family: $NSJP;
     line-height: 2.3;
     max-width: 329px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $NSJP;
 }

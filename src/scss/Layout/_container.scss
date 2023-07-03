@@ -1,0 +1,20 @@
+@use "../../scss/Foundation/variable" as *;
+
+.l-container{
+
+    @include breakpoint(pc){
+        width: 755px;
+        height: 800px;
+        overflow-y: scroll;
+        position: absolute;
+        right: 0;
+        top: 5%;
+        background: url(../../image/png/スマホと手.png);
+        background-size: cover;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    
+}

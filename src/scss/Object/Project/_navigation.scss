@@ -1,0 +1,16 @@
+@use "../../Foundation/variable";
+
+.p-navigation{
+
+
+    &--sidebar{
+        
+        width: 212px;
+        margin: auto;
+    
+
+        li{
+            margin-bottom: 35px;
+        }
+    }
+}

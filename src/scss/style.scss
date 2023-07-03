@@ -11,6 +11,8 @@
 // ---------------------------------
 @use "./Layout/footer";
 @use "./Layout/main";
+@use "./Layout/container";
+@use "./Layout/sidebar";
  
  
 // ---------------------------------
@@ -40,6 +42,8 @@
 @use "../scss/Object/Project/profile";
 @use "../scss/Object/Project/works";
 @use "../scss/Object/Project/skill";
+@use "../scss/Object/Project/navigation";
+@use "../scss/Object/Project/card";
 // ----------
 // Utility
 // ----------
