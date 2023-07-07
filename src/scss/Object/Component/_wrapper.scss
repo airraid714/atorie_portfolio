@@ -1,0 +1,22 @@
+@use "../../Foundation/variable" as *;
+
+.c-wrapper--main{
+
+    overflow-x: hidden;
+    background: gray;
+    max-width: 392px;
+
+    @include breakpoint(pc){
+        position: relative;
+        top: 22px;
+        left: 105px;
+        border-radius: 65px;
+        height: 750px;
+        background: none;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+}

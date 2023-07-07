@@ -1,4 +1,4 @@
-@use "../../Foundation/variable";
+@use "../../Foundation/variable" as *;
 
 .p-navigation{
 
@@ -6,11 +6,28 @@
     &--sidebar{
         
         width: 212px;
-        margin: auto;
-    
-
+        margin: 130px 100px 0;
+        position: fixed;
         li{
             margin-bottom: 35px;
+        }
+
+        &.is-open{
+
+            @include breakpoint(pc){
+
+              opacity: 1;
+              transition: all  0.7s ease-in;
+              visibility: visible;
+            }
+    
+
+        }
+
+        @include breakpoint(pc){
+            opacity: 0;
+            transition: all 0.2s ease-in;
+            visibility: hidden;
         }
     }
 }

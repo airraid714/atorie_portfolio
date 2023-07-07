@@ -372,11 +372,26 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   left: 100%;
   top: 0;
-  transition: 0.3s;
+  transition: 0.5s;
   z-index: 1000;
+  max-width: 392px;
+}
+@media (min-width: 1024px) {
+  .l-sidebar {
+    position: absolute;
+  }
+}
+.l-sidebar.is-open {
+  left: 0;
+  position: fixed;
+}
+@media (min-width: 1024px) {
+  .l-sidebar.is-open {
+    position: absolute;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -399,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #F7F8F8;
 }
 .c-background--sidebar {
-  background: #6C6C6C;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .c-logo--main {
@@ -457,13 +472,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 28px;
   height: 28px;
   position: fixed;
-  right: 20px;
+  left: min(88%, 340px);
   top: 25px;
   z-index: 100000;
 }
 @media (min-width: 1024px) {
   .c-button--hamburger {
-    right: auto;
+    left: auto;
     top: auto;
     margin: 35px 0 0 330px;
   }

@@ -5,12 +5,12 @@
     width: 28px;
     height: 28px;
     position: fixed;
-    right: 20px;
+    left: min(88%,340px);
     top: 25px;
     z-index: 100000;
 
     @include breakpoint(pc){
-        right: auto;
+        left: auto;
         top: auto;
         margin: 35px 0 0 330px;
     }
