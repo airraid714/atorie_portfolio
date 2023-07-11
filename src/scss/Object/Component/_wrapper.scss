@@ -3,10 +3,19 @@
 .c-wrapper--main{
 
     overflow-x: hidden;
-    background: gray;
+    background: url(../../../image/png/シルエット.png) #656565 repeat-y;
+    background-size: 250px;
+    background-attachment: fixed;
+    background-position: center;
     max-width: 392px;
+    margin: auto;
+
+    @include breakpoint(tablet){
+        scroll-behavior: smooth;
+    }
 
     @include breakpoint(pc){
+        margin: 0;
         position: relative;
         top: 22px;
         left: 105px;
