@@ -8,7 +8,7 @@
         width: 90px;
         position: fixed;
         top: 15px;
-        left: 20px;
+        left: calc((100vw - 392px) / 2 + 20px);
         z-index: 100000;
 
         @include breakpoint(pc){
