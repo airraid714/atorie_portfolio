@@ -18,5 +18,18 @@ jQuery( function($){
 
     });
 
+    // ドロップダウンメニューをクリックするとサブメニューが出現
+    $(".js-dropdown").on("click",function(){
+        $(".c-button--dropdown").toggleClass("is-open");
+        $(".p-navigation--dropdown__content").toggleClass("is-open");
+        $(".p-navigation--dropdown__content li").toggleClass("is-open");
+        $(".p-navigation--dropdown__content li a").toggleClass("is-open");
+
+        
+    })
+
+
+    
+
 
 });

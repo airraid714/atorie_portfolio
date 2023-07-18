@@ -44,4 +44,20 @@
     &__button{
         margin: 42px auto 0;
     }
+
+
+    &--page{
+        position: relative;
+        margin-bottom: 73px;
+
+        &__title{
+            position: absolute;
+            width: 216px;
+            top: 37%;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+    }
 }

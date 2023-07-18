@@ -14,7 +14,7 @@
 
     @include breakpoint(pc){
         position: absolute;
-        height: 10000px;
+        height: 100%;
 
     }
     &.is-open{

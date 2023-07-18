@@ -33,4 +33,61 @@
             margin: 0 auto 56px;
         }
     }
+
+    &--inco{
+
+        margin-bottom: 60px;
+        
+        &__item{
+
+            margin: 0 auto 36px;
+            width: 356px;
+            height: 180px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $yellow;
+            border-radius: 10px;
+
+            &__img{
+                width: 160px;
+                height: 160px;
+                margin-left: 10px;
+
+                img{
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            &__info{
+                display: flex;
+                flex-direction: column;
+                width: 166px;
+                height: 160px;
+                line-height: 1;
+                position: relative;
+                &__date{
+                    font-size: 14px;
+                }
+                &__title{
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+                &__text{
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+                &__category{
+                    position:absolute;
+                    bottom: 0;
+                    display: inline;
+                    border-radius: 30px;
+                    background: $orange;
+                    padding: 0 15px;
+                    font-size: 11.5px; 
+                }
+            }
+        }
+    }
 }
