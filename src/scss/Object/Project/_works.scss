@@ -1,0 +1,27 @@
+@use "../../Foundation/variable" as *;
+
+.p-works{
+
+    padding: 25px 0 45px;
+
+    h2{
+        width: 345px;
+        height: 72px;
+        margin: 0 auto 30px;
+    }
+
+    &__text-1{
+        width: 240px;
+        font-size: 20px;
+        margin: 0 auto 47px;
+    }
+    &__text-2{
+        width: 330px;
+        font-size: 20px;
+        margin: 0 auto 44px;
+    }
+
+    &__button{
+        margin: 0 auto 56px;
+    }
+}

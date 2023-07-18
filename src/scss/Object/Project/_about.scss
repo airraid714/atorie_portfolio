@@ -1,0 +1,54 @@
+@use "../../Foundation/variable" as *;
+
+.p-about--site{
+
+
+    h2{
+        width: 372px;
+        margin: 0 auto 78px;
+    }
+
+    &__content{
+
+        :last-child{
+            margin-bottom: 0;
+        }
+        
+        h3{
+            margin: 0 auto 40px;
+        }
+
+        p{
+            font-size: 20px;
+            margin: 0 auto;
+        }
+
+        figure{
+            width: 307px;
+            margin: 0 auto 16px;
+        }
+
+
+        &__item{
+
+            margin-bottom: 40px;
+
+            a{
+                margin: 0 0 10px 25px;
+            }
+        }
+    }
+
+}
+
+.p-about--me{
+
+    padding-bottom: 36px;
+
+    h2{
+        width: 308px;
+        margin: 0 auto 40px;
+    }
+
+
+}

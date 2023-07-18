@@ -1,0 +1,27 @@
+@use "../../Foundation/variable"as *;
+
+.p-message{
+
+    padding: 15px 0 67px;
+
+
+    &__text{
+        font-size: 20px;
+        width: 332px;
+        margin: auto;
+
+        &--2{
+            @extend .p-message__text;
+            margin: 10px auto 38px;
+        }
+    }
+
+    figure{
+        width: 341px;
+        margin: -20px auto 0;
+    }
+
+    &__button{
+        margin: auto; 
+    }
+}

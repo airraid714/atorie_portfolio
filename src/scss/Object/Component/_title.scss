@@ -1,0 +1,49 @@
+@use "../../Foundation/variable" as *;
+
+.c-title{
+
+    &--atorie{
+        width: 227px;
+    }
+    &--about-site--side{
+        width: 180px;
+    }
+
+    &--contents{
+        width: 195px;
+    }
+
+    &--about-me--side{
+        width: 140px;
+    }
+
+
+    &--inco{
+        display: inline-block;
+        width: 184px;
+    }
+    &--inco--side{
+        width: 140px;
+    }
+
+    &--web{
+        display: inline-block;
+        width: 218px;
+    }
+    &--web--side{
+        width: 163px;
+    }
+
+    &--message{
+        width: 180px;
+        margin: 0 auto 38px;
+    }
+    &--message--side{
+       width: 60px;
+    }
+
+    &--contact--side{
+        width: 192px;
+    }
+
+}

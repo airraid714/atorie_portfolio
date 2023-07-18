@@ -1,0 +1,19 @@
+@use "../../Foundation/variable" as *;
+
+.c-layer{
+
+    &--sidebar{
+
+        background: $yellow;
+        width: calc((100vw - 392px) / 2);
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999999;
+        
+        @include breakpoint(pc){
+            display: none;
+        }
+    }
+}

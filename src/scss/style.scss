@@ -9,7 +9,10 @@
 //----------------------------------
 // Layout
 // ---------------------------------
-
+@use "./Layout/footer";
+@use "./Layout/main";
+@use "./Layout/container";
+@use "./Layout/sidebar";
  
  
 // ---------------------------------
@@ -20,14 +23,32 @@
 // ----------
 // Component
 // ----------
+@use "../scss/Object/Component/background";
+@use "../scss/Object/Component/logo";
+@use "../scss/Object/Component/bird";
+@use "../scss/Object/Component/object";
+@use "../scss/Object/Component/button";
+@use "../scss/Object/Component/title";
+@use "../scss/Object/Component/shadow";
+@use "../scss/Object/Component/animation";
+@use "../scss/Object/Component/wrapper";
+@use "../scss/Object/Component/layer";
 
- 
 // ----------
 // Project
 // ----------
- 
+@use "../scss/Object/Project/about";
+@use "../scss/Object/Project/first-view";
+@use "../scss/Object/Project/inco";
+@use "../scss/Object/Project/message";
+@use "../scss/Object/Project/profile";
+@use "../scss/Object/Project/works";
+@use "../scss/Object/Project/skill";
+@use "../scss/Object/Project/navigation";
+@use "../scss/Object/Project/card";
+@use "../scss/Object/Project/pagenation";
 // ----------
 // Utility
 // ----------
-
+@use "../scss/Object/Utility/margin";
 

@@ -1,0 +1,11 @@
+@use "../../Foundation/variable" as *;
+
+.c-animation--push{
+    
+    transition: all .2s;
+    &:hover{
+        transform: translateY(4px);
+        box-shadow: none;
+        
+    }
+}

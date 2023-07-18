@@ -17,3 +17,24 @@
 }
 @include breakpoint(pc){
 }
+
+//----------------------
+// カラー
+
+$black-00: #000000;
+$black-2A: #2A2A2A;
+$black-36: #363636;
+$white-ff: #FFFFFF;
+$gray-F7:  #F7F8F8;
+$gray-6c:  rgba(0, 0, 0, 0.6);
+$orange:   #FFCD4C;
+$yellow:   #FFF1CD;
+$red:      #FF4444;
+$blue:     #ACDCE7;
+$cream:    #FFFBD3;
+
+
+
+//----------------------
+// フォント
+$NSJP:   'Noto Sans JP', sans-serif;

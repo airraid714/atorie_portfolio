@@ -1,0 +1,32 @@
+@use "../../Foundation/variable" as *;
+
+.c-background{
+
+    &--main{
+
+        @include breakpoint(pc){
+            height: 100vh;
+            position: fixed;
+            width: 100%;
+            display: block;
+            background: url(../../../image/jpg/メインエリア.jpg);
+            background-size: cover;
+    
+        }
+    }
+
+    &--cream{
+        background: $cream;
+    }
+
+    &--white{
+        background: $white-ff;
+    }
+
+    &--gray{
+        background:  $gray-F7;
+    }
+    &--sidebar{
+        background: $gray-6c;        
+    }
+}

@@ -1,0 +1,41 @@
+@use "../../Foundation/variable" as *;
+
+.p-inco{
+
+    padding: 45px 0;
+
+    h2{
+        width: 308px;
+        margin: 0 auto 40px;
+    }
+    &__text{
+        width: 290px;
+        text-align: center;
+        font-size: 22px;
+        margin: 0 auto 60px;
+    }
+
+    div{
+        margin: 0 auto 60px;
+        position: relative;
+
+        figure{
+            width: 274px;
+            height: 244px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 37px;
+
+            img{
+                height: 100%;
+                border-radius: 3px;
+            }
+        }
+    
+    }
+
+    &__button{
+        margin: auto;
+    }
+}
