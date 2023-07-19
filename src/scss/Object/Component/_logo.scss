@@ -13,7 +13,8 @@
 
         @include breakpoint(pc){
             width: 200px;
-            position: absolute;    
+            position: absolute;
+            left: 20px;    
         }
     }
 

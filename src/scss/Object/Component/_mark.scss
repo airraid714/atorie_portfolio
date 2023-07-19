@@ -1,0 +1,12 @@
+@use "../../Foundation/variable" as *;
+
+.c-mark{
+
+    &--category{
+        display: inline-block;
+        height: 28px;
+        padding: 5px 10px;
+        background: $orange;
+        border-radius: 30px;
+    }
+}

@@ -1,0 +1,82 @@
+@use "../../Foundation/variable" as *;
+
+.p-single{
+
+    width: 340px;
+    margin: auto;
+
+    &__title{
+        font-size: 30px;
+        margin-bottom: 48px;
+        text-align: center;
+        color: $black-36;
+    }
+
+    &__img{
+        width: 310px;
+        height: 310px;
+        border-radius: 10px;
+        margin: 0 auto 36px;
+        background: $black-36;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    &__date-category{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &__dt{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &__ct{
+            width: 175px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li{
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    &__overview{
+        font-size: 17px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 36px;
+
+        dt,dd{
+            margin-bottom: 15px;
+        }
+        
+        dt{
+            width: 30%;
+            position: relative;
+            font-weight: 700;
+            &::after{
+                position: absolute;
+                content: ":";
+            }
+        }
+        dd{
+            line-height: 1.7;
+            width: 70%;
+        }
+
+    }
+
+    &__text{
+        font-size: 18px;
+        width: 336px;
+        margin: 0 auto 40px;
+        
+    }
+}
