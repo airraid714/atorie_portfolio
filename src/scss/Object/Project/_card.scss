@@ -3,6 +3,7 @@
 .p-card{
 
     &--works{
+
         &__img{
             width: 365px;
             height: 240px;
@@ -89,5 +90,36 @@
                 }
             }
         }
+    }
+
+    &--works{
+
+        margin-bottom: 60px;
+
+        &__item{
+            border-radius: 10px;
+            width: 310px;
+            margin: 0 auto 36px;
+            padding-bottom: 20px;
+
+            &__img{
+                width: 100%;
+                height: 240px;
+                margin-bottom: 20px;
+
+                img{
+                    height: 100%;
+                }
+                
+            }
+            &__title{
+                text-align: center;
+                font-size: 19px;  
+                padding: 0 10px;              
+
+            }
+
+        }
+        
     }
 }

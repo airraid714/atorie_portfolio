@@ -33,6 +33,7 @@
 @use "../scss/Object/Component/animation";
 @use "../scss/Object/Component/wrapper";
 @use "../scss/Object/Component/layer";
+@use "../scss/Object/Component/mark";
 
 // ----------
 // Project
@@ -47,6 +48,7 @@
 @use "../scss/Object/Project/navigation";
 @use "../scss/Object/Project/card";
 @use "../scss/Object/Project/pagenation";
+@use "../scss/Object/Project/single";
 // ----------
 // Utility
 // ----------
