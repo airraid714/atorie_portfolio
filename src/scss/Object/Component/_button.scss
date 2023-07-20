@@ -164,5 +164,27 @@
 
     }
     
+    &--dropdown--form{
+        border: 1px solid $gray-66;
+        width: 100%;
+        height: 53px;
+        position: relative;
+        
+    }
+
+    &--checkbox{
+        width: 33px;
+        height: 33px;
+    }
+
+    &--submit{
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        background: $gray-D2;
+        border-radius: 5px;
+    }
+    
 }
 
