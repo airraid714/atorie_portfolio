@@ -49,8 +49,10 @@
 @use "../scss/Object/Project/card";
 @use "../scss/Object/Project/pagenation";
 @use "../scss/Object/Project/single";
+@use "../scss/Object/Project/contact";
 // ----------
 // Utility
 // ----------
 @use "../scss/Object/Utility/margin";
-
+@use "../scss/Object/Utility/font-size";
+@use "../scss/Object/Utility/font-weight";
