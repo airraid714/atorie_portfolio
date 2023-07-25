@@ -1,0 +1,27 @@
+@use "../../Foundation/variable" as *;
+
+.swiper{
+
+
+}
+
+
+.swiper-wrapper{
+
+}
+
+
+.swiper-slide{
+
+}
+
+.swiper-button-prev,.swiper-button-next{
+    position:  static;
+
+    &::after{
+        display: none;
+    }
+}
+
+
+

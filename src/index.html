@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./scss/style.scss">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="./js/jquery-3.6.0.min.js"></script>
@@ -164,20 +165,33 @@
                 </ul>
     
               </article>
-              <article class="c-shadow--gray">
+              <article class="swiper c-shadow--gray">
                 <h3><img src="./image/png/いんこスキル.png"></h3>
-                <ul class="p-skill__inco"> <!--スライダーの実装-->
-                  <li>
+                <ul class="swiper-wrapper p-skill__inco"> <!--スライダーの実装-->
+                  <li class="swiper-slide">
                     <figure><img src="./image/png/孵化・巣上げ.png"></figure>
+                    <p class="c-title--slide--inco">孵化・巣上げ</p>
                   </li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                  <li class="swiper-slide">
+                    <figure><img src="./image/png/雛の飼育.png"></figure>
+                    <p class="c-title--slide--inco">雛からの飼育</p>
+                  </li>
+                  <li class="swiper-slide">
+                    <figure><img src="./image/png/口笛教える.png"></figure>
+                    <p class="c-title--slide--inco">口笛教える</p>
+                  </li>
+                  <li class="swiper-slide">
+                    <figure><img src="./image/png/手乗り訓練.png"></figure>
+                    <p class="c-title--slide--inco">手乗り訓練</p>
+                  </li>
+                  <li class="swiper-slide">
+                    <figure><img src="./image/png/怪我の応急処置.png"></figure>
+                    <p class="c-title--slide--inco">怪我の応急処置</p>
+                  </li>
                 </ul>
                 <div class="p-skill__button c-button--slider">
-                  <button><img src="./image/png/戻る.png"></button>
-                  <button><img src="./image/png/次へ.png"></button>
+                  <button class="swiper-button-prev"><img src="./image/png/戻る.png"></button>
+                  <button class="swiper-button-next"><img src="./image/png/次へ.png"></button>
                 </div>
               </article>
       
@@ -263,5 +277,7 @@
       </div>
     </div>
     <script src="./js/navigation.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

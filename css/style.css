@@ -602,19 +602,17 @@ article {
   height: 53px;
   position: relative;
 }
-.c-button--dropdown--form::after {
-  position: absolute;
-  content: "";
-  width: 24px;
-  height: 22px;
-  top: 13px;
-  right: 25px;
-  background: url(../../../image/svg/三角形.svg) no-repeat;
-  background-size: contain;
-}
 .c-button--checkbox {
   width: 33px;
   height: 33px;
+}
+.c-button--submit {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #D2D2D2;
+  border-radius: 5px;
 }
 
 .c-title--atorie {
@@ -704,6 +702,14 @@ article {
   border: 1px solid #666666;
   margin-bottom: 43px;
 }
+.c-wrapper--checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 138px;
+  height: 50px;
+  margin-bottom: 30px;
+}
 
 .c-layer--sidebar {
   background: #FFF1CD;
@@ -734,7 +740,7 @@ article {
   position: absolute;
   line-height: 1;
   content: "必須";
-  left: -65px;
+  left: -70px;
   color: #FFFFFF;
   font-size: 16px;
   width: 58px;
@@ -742,6 +748,19 @@ article {
   background: #FF4444;
   border-radius: 3px;
   padding: 5px 12px;
+}
+.c-mark--drop {
+  position: relative;
+}
+.c-mark--drop::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 22px;
+  top: 20px;
+  right: 25px;
+  background: url(../../../image/svg/三角形.svg) no-repeat;
+  background-size: contain;
 }
 
 .p-about--site h2 {
@@ -958,12 +977,8 @@ article {
   width: 180px;
   font-weight: bold;
 }
-.p-skill article .p-skill__inco {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
 .p-skill article .p-skill__inco li figure {
+  margin: auto;
   width: 270px;
   height: 230px;
 }
@@ -1261,7 +1276,7 @@ article {
 
 .p-contact {
   width: 329px;
-  margin: 0 auto 0;
+  margin: 0 auto 80px;
 }
 .p-contact__text {
   font-size: 18px;
@@ -1274,8 +1289,8 @@ article {
 }
 .p-contact__form__label, .p-contact__form__label--privacy {
   display: block;
-  margin-left: 65px;
-  font-size: 18px;
+  margin-left: 70px;
+  font-size: 20px;
   font-weight: bold;
   color: #363636;
   margin-bottom: 17px;
@@ -1287,6 +1302,7 @@ article {
 .p-contact__form select {
   margin-bottom: 43px;
   font-size: 18px;
+  font-weight: bold;
   padding: 0 10px;
 }
 .p-contact__form select option {
@@ -1298,7 +1314,7 @@ article {
   width: 100%;
   height: 53px;
   margin-bottom: 43px;
-  padding: 0 10px;
+  padding: 10px;
 }
 .p-contact__form__textarea {
   height: 294px;
@@ -1306,6 +1322,11 @@ article {
 .p-contact__form__privacy {
   font-size: 16px;
   color: #636363;
+  font-weight: bold;
+}
+
+.swiper-button-prev::after {
+  display: none;
 }
 
 .u-margin--b--135 {
