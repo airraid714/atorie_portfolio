@@ -1,0 +1,63 @@
+@use "../../Foundation/variable" as *;
+
+.p-mocup{
+    display: none;
+
+    @include breakpoint(pc){
+
+        display: inline-block;
+        background: url('../../../image/svg/Vector.svg');
+        mask-image: url('../../../image/svg/Vector.svg');
+        position: relative;
+        top: 189px;
+        left: 0;
+        z-index: 100;
+        width: 523px;
+        height: 402px;
+        overflow: hidden;
+    }    
+
+    img{
+        position: absolute;
+        object-fit: contain;
+        width: 250px;
+        height: 250px;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        // animation: change-img-anim 10s infinite;
+        // @keyframes change-img-anim {
+        //     0%{ opacity: 0;}
+        //     10%{ opacity: 1;}
+        //     80%{ opacity: 1;}
+        //     100%{ opacity: 0;}
+        // }
+    
+        // &:nth-of-type(1) {
+        //     animation-delay: 0s;
+        // }
+        // &:nth-of-type(2) {
+        //     animation-delay: 10s;
+        // }
+        // &:nth-of-type(3) {
+        //     animation-delay: 20s;
+        // }
+        // // &:nth-of-type(4) {
+        // //     animation-delay: 30s;
+        // // }
+        // // &:nth-of-type(5) {
+        // //     animation-delay: 40s;
+        // // }
+        // // &:nth-of-type(6) {
+        // //     animation-delay: 50s;
+        // // }
+
+        img{
+            height: 100%;
+            object-fit: contain;
+        }
+
+
+    }
+}
