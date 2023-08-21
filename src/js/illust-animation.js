@@ -6,7 +6,6 @@ const images = document.querySelectorAll('.animated-image'); // イラストの�
 gsap.set(images, { autoAlpha: 0 });
 
 const animationDuration = 3; // フェードイン・フェードアウトの時間（秒）
-const fadeInOutDelay = 0; // イラストの表示切り替えの遅延時間（秒）
 
 let isAnimating = false; // アニメーションが進行中かどうかを示すフラグ
 
@@ -33,9 +32,9 @@ function animateWithPromise(element, props) {
 async function animateImages() {
   const tl = gsap.timeline({ repeat: -1 });
 
-  let currentIndex = -1; // 現在表示中のイラストのインデックス
+  let currentIndex = -1; // アニメーション開始時はどのイラストも表示されない状態にするための変数
 
-  async function switchImage() {
+  async function switchImage() { //アニメーションを開始するために最初に呼び出される関数
     if (isAnimating) {
       return; // アニメーションが進行中なら中断
     }
@@ -52,7 +51,6 @@ async function animateImages() {
       await animateWithPromise(images[nextIndex], {
         duration: animationDuration,
         autoAlpha: 1,
-        delay: fadeInOutDelay,
       });
 
       currentIndex = nextIndex; // イラストを切り替える前にインデックスを更新
@@ -61,7 +59,6 @@ async function animateImages() {
       await animateWithPromise(images[nextIndex], {
         duration: animationDuration,
         autoAlpha: 1,
-        delay: fadeInOutDelay,
       });
 
       currentIndex = nextIndex;

@@ -12,18 +12,20 @@
         top: 189px;
         left: 0;
         z-index: 100;
-        width: 523px;
-        height: 402px;
+        width: calc(523% / 1440 * 100 );
+        max-width: 523px;
+        height: calc(402% / 810 * 100 );
+        max-height: 402px;
         overflow: hidden;
     }    
 
     img{
         position: absolute;
         object-fit: contain;
-        width: 250px;
-        height: 250px;
+        width: min(calc(250% / 523 * 100 ));
+        height: min(calc(250% / 402 * 100));
         left: 50%;
-        top: 40%;
+        top: 45%;
         transform: translate(-50%, -50%);
         opacity: 0;
         // animation: change-img-anim 10s infinite;
