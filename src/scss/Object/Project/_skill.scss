@@ -47,14 +47,12 @@
         }
 
         .p-skill__inco{
-            display: flex;
-            justify-content: center;
-            overflow: hidden;
     
             li{
                 figure{
-                    width: 270px;
-                    height: 230px;
+                    margin: auto;
+                    width: 200px;
+                    height: 200px;
                 }
             }
     
@@ -63,7 +61,7 @@
         
         .p-skill__button{
 
-            margin:  30px auto 0;
+            margin:  35px auto 0;
         }
     
     

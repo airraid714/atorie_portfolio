@@ -8,6 +8,7 @@
         font-size: 18px;
         margin-bottom: 70px;
         max-height: 295px;
+        padding: 0 5px;
         overflow-y: scroll;
         &::-webkit-scrollbar{
             display: none;
@@ -19,7 +20,7 @@
         &__label{
             display: block;
             margin-left: 70px;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
             color: $black-36;
             margin-bottom: 17px;

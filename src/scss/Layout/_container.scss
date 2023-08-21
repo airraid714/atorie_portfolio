@@ -6,11 +6,12 @@
 
     @include breakpoint(pc){
         width: 755px;
-        height: 800px;
+        height: 810px;
         overflow-y: scroll;
         position: absolute;
+        z-index: 200;
         right: 0;
-        top: 5%;
+        // top: 5%;
         background: url(../../image/png/スマホと手.png);
         background-size: cover;
         
