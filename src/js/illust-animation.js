@@ -1,5 +1,7 @@
 import { gsap } from 'gsap';
 
+// メインエリア左のPC内で鳥の画像がランダムに入れ替わるアニメーション
+
 const images = document.querySelectorAll('.animated-image'); // イラストの要素を取得
 
 // イラストの初期状態を設定（透明にする）
@@ -72,3 +74,14 @@ async function animateImages() {
 }
 
 animateImages();
+
+//メインエリア右側の鳥の遊具の上に止まっているインコがスマホに飛んでくるギミックアニメーション
+
+document.addEventListener("DOMContentLoaded", function() { 
+
+ document.querySelector(".js-gimmick").addEventListener("click", function() {
+  const container = document.querySelector(".l-container");
+  container.classList.toggle("is-down");
+ });
+
+});

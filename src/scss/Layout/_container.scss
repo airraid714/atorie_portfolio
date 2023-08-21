@@ -10,13 +10,20 @@
         overflow-y: scroll;
         position: absolute;
         z-index: 200;
+        top: 0;
         right: 0;
         // top: 5%;
         background: url(../../image/png/スマホと手.png);
         background-size: cover;
+        transition: .3s;
         
         &::-webkit-scrollbar {
             display: none;
+        }
+
+        &.is-down{
+            top: 320px;
+            
         }
     }
     

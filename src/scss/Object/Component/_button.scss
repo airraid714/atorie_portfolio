@@ -186,6 +186,18 @@
         background: $gray-D2;
         border-radius: 5px;
     }
+
+    &--gimmick{
+        width: 25px;
+        height: 115px;
+        font-size: 0;
+        position: absolute;
+        z-index: 500000;
+        top: 205px;
+        left: 500px;
+        cursor: pointer;
+
+    }
     
 }
 
