@@ -1,0 +1,13 @@
+@use "../../Foundation/variable" as *;
+
+.c-display{
+
+    &--control{
+        display: none;
+
+        @include breakpoint(pc){
+
+            display: block;
+        }
+    }
+}

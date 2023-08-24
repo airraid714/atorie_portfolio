@@ -85,3 +85,15 @@ document.addEventListener("DOMContentLoaded", function() {
  });
 
 });
+
+import { MotionPathPlugin } from 'gsap/MotionPathPlugin.js';
+gsap.registerPlugin(MotionPathPlugin);
+
+// gsap.to('.l-container', {
+//   duration: 2,
+//   motionPath: {
+//     path: [{ x: 500, y: 200 }, { x: 2000, y: -500 }],
+//     curviness: 1,
+//     ease: 'power3.in'
+//   }
+// });

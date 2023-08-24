@@ -16,19 +16,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // ドロップダウンメニューをクリックするとサブメニューが出現
-    document.querySelector(".js-dropdown").addEventListener("click", function() {
-        document.querySelector(".c-button--dropdown").classList.toggle("is-open");
-        document.querySelector(".p-navigation--dropdown__content").classList.toggle("is-open");
+    const dropdownElement = document.querySelector(".js-dropdown");
 
-        const listItemElements = document.querySelectorAll(".p-navigation--dropdown__content li");
-        listItemElements.forEach(function(li) {
-            li.classList.toggle("is-open");
-            const anchorElement = li.querySelector("a");
-            if (anchorElement) {
-                anchorElement.classList.toggle("is-open");
-            }
-        });
-    });
+    if(dropdownElement){
+        dropdownElement.addEventListener("click", function() {
+            document.querySelector(".c-button--dropdown").classList.toggle("is-open");
+            document.querySelector(".p-navigation--dropdown__content").classList.toggle("is-open");
+    
+            const listItemElements = document.querySelectorAll(".p-navigation--dropdown__content li");
+            listItemElements.forEach(function(li) {
+                li.classList.toggle("is-open");
+                const anchorElement = li.querySelector("a");
+                if (anchorElement) {
+                    anchorElement.classList.toggle("is-open");
+                }
+            });
+        });    
+    }
 });
 
 
