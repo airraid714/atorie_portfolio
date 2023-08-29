@@ -29,9 +29,22 @@
         position: absolute;
         top: 32%;
         z-index: 10;
-        @include breakpoint(pc){
-            // left: calc(max(50%, min(70%, 70% + (100vw - 1024px))));
-            left: max(calc(70% - (100vw - 1024px)),50%);
+        left: max(calc(70% - (100vw - 1024px)),50%);
+    }
+
+    &--inco{
+        width: 80px;
+        top: 150px;
+        left: max(calc(110% - (100vw - 1024px)),88%);
+        position: absolute;
+        z-index: 20;
+
+        &-tail{
+            width: 40px;
+            position: absolute;
+            z-index: 9;
+            top: 260px;
+            left: max(calc(111% - (100vw - 1024px)),89%);
         }
     }
 }
