@@ -98,13 +98,12 @@ document.addEventListener("DOMContentLoaded", function() {
       gsap.to( objectInco, { 
         delay: 0.2,
         duration: 1,
-        scale: 1.8,
+        scale: 1.5,
         ease: Power1.easeInOut,
         motionPath: {
           path: [ { x: 0, y: 0 },
-                  { x: -300, y: 800 },
-                  { x: -320, y: -20 },
-                  { x: -300, y: 0 }
+                  { x: -350, y: 800 },
+                  { x: -350, y: 90 },
                 ],  
         },
         onUpdate: function(){
@@ -134,24 +133,25 @@ document.addEventListener("DOMContentLoaded", function() {
     } else{
 
       gsap.to(objectInco, {
+        delay: 0.1,
         duration: 2,
         scale: 1,
         ease: "cubic-bezier(1, 0.2, 1)",
         motionPath: {
-          path: [ { x: -300, y: 20 },
-                  { x: -350, y: 50},
-                  { x: 100, y: -1000 },
-                  { x: 10, y: -30 },
-                  { x: 0, y: -10 },
+          path: [ { x: -350, y: 90 },
+                  { x: -1000, y: 1000},
+                  { x: -800, y: -1000 },
+                  { x: 200, y: -30 },
+                  { x: 0, y: 0 },
                 ]
         },
         onUpdate: function(){
-          if (this.progress() > 0 ){
+          if (this.progress() > 0.1 ){
             const imageTag = incoBody.querySelector("img");
             if (imageTag){
               imageTag.src = thirdImagepath;
             }
-            imageTag.style.width = "150px";
+            imageTag.style.width = "200px";
             imageTag.style.height = "150px";
             incoTail.style.opacity = 0;
           }
