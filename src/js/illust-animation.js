@@ -1,4 +1,9 @@
-import { gsap } from 'gsap';
+import { gsap, Power1 } from 'gsap';
+import { MotionPathPlugin } from 'gsap/MotionPathPlugin.js';
+gsap.registerPlugin( MotionPathPlugin );
+
+
+// メインエリア左のPC内で鳥の画像がランダムに入れ替わるアニメーション
 
 const images = document.querySelectorAll('.animated-image'); // イラストの要素を取得
 
@@ -72,3 +77,112 @@ async function animateImages() {
 }
 
 animateImages();
+
+//メインエリア右側の鳥の遊具の上に止まっているインコがスマホに飛んでくるギミックアニメーション
+
+document.addEventListener("DOMContentLoaded", function() { 
+
+  const container = document.querySelector(".l-container");
+  const incoBody  = document.querySelector(".c-object--inco");
+  const incoTail  = document.querySelector(".c-object--inco-tail");
+  const objectInco = [ incoBody,incoTail ];
+  const initialImagePath = "./image/svg/セキセイインコ.svg";
+  const secondImagepath = "./image/svg/fly_inco_side.svg";
+  const thirdImagepath = "./image/svg/fly_inco_up.svg";
+
+ document.querySelector(".js-gimmick").addEventListener("click", function() {
+  container.classList.toggle("is-down");
+
+    if (container.classList.contains("is-down")){
+
+      gsap.to( objectInco, { 
+        delay: 0.2,
+        duration: 1,
+        scale: 1.5,
+        ease: Power1.easeInOut,
+        motionPath: {
+          path: [ { x: 0, y: 0 },
+                  { x: -350, y: 800 },
+                  { x: -350, y: 90 },
+                ],  
+        },
+        onUpdate: function(){
+
+          if (this.progress() > 0.1 ){
+            const imageTag = incoBody.querySelector("img");
+            if (imageTag){
+              imageTag.src = secondImagepath;
+              
+            }
+            imageTag.style.width = "150px";
+            imageTag.style.height = "150px";
+            incoTail.style.opacity = 0;
+          }
+          if (this.progress() > 0.9 ){
+            const imageTag = incoBody.querySelector("img");
+            if (imageTag){
+              imageTag.src = initialImagePath;
+            }
+            imageTag.style.width = "88px";
+            imageTag.style.height = "150px";
+            incoBody.style.zIndex = 210;
+          }
+        },
+      });
+    
+    } else{
+
+      gsap.to(objectInco, {
+        delay: 0.1,
+        duration: 2,
+        scale: 1,
+        ease: "cubic-bezier(1, 0.2, 1)",
+        motionPath: {
+          path: [ { x: -350, y: 90 },
+                  { x: -1000, y: 1000},
+                  { x: -800, y: -1000 },
+                  { x: 200, y: -30 },
+                  { x: 0, y: 0 },
+                ]
+        },
+        onUpdate: function(){
+          if (this.progress() > 0.1 ){
+            const imageTag = incoBody.querySelector("img");
+            if (imageTag){
+              imageTag.src = thirdImagepath;
+            }
+            imageTag.style.width = "200px";
+            imageTag.style.height = "150px";
+            incoTail.style.opacity = 0;
+          }
+
+          if (this.progress() > 0.5 ){
+            const imageTag = incoBody.querySelector("img");
+            if (imageTag){
+              imageTag.src = secondImagepath;
+            }
+            imageTag.style.width = "200px";
+            imageTag.style.height = "200px";
+            incoTail.style.opacity = 0;
+          }
+
+          if (this.progress() > 0.9 ){
+            const imageTag = incoBody.querySelector("img");
+            if (imageTag){
+              imageTag.src = initialImagePath;
+            }
+            imageTag.style.width = "88px";
+            imageTag.style.height = "150px";
+            incoTail.style.opacity = 1;
+          }
+          
+        },
+        onComplete: function(){
+          incoBody.style.zIndex = 20;
+        },
+
+      });
+    }
+ });
+
+});

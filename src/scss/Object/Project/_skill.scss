@@ -15,12 +15,15 @@
             margin: 0 auto 42px; 
         }
 
+        @include breakpoint(pc){
+            width: 100%
+        }
+
         .p-skill__web{
 
             li{
-                width: 300px;
-                height: 150px;
-                padding: 0 15px;
+                width: 90%;
+                padding: 25px 15px;
                 background: $white-ff;
                 border-radius: 20px;
                 margin: 0 auto 40px;
@@ -30,14 +33,18 @@
                 box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
                 figure{
-                    width: 74px;
-                    height: 74px;
+                    width: 24%;
+
                 }
 
                 p{
-                    font-size: 13px;
-                    width: 180px;
+                    font-size: 1.3rem;
+                    width: 70%;
                     font-weight: bold;
+
+                    @include breakpoint(pc){
+                        font-size: 1rem;
+                    }
                 }
     
     

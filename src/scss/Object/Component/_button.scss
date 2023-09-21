@@ -13,7 +13,7 @@
         @include breakpoint(pc){
             left: auto;
             top: auto;
-            margin: 35px 0 0 330px;
+            margin: 35px 0 0 230px;
         }
     
         span{
@@ -185,6 +185,18 @@
         font-weight: bold;
         background: $gray-D2;
         border-radius: 5px;
+    }
+
+    &--gimmick{
+        width: 15px;
+        height: 85px;
+        font-size: 0;
+        position: absolute;
+        z-index: 500000;
+        top: 145px;
+        left: 360px;
+        cursor: pointer;
+
     }
     
 }

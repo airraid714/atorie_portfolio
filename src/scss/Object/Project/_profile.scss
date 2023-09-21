@@ -8,16 +8,29 @@
     background:  $gray-F7;
     margin: 0 auto 40px;
 
+    @include breakpoint(pc){
+        width: 100%;
+    }
+
     h3{
        width: 182px;
        height: 30px;    
        margin: 0 auto 42px; 
+
+       @include breakpoint(pc){
+        width: 162px;
+       }
     }
 
     figure{
         width: 270px;
         height: 270px;
         margin: 0 auto 40px;
+
+        @include breakpoint(pc){
+            width: auto;
+            height: auto;
+        }
     }
 
     ul{
@@ -26,11 +39,26 @@
     }
 
     li{
-        font-size: 22px;
+        font-size: 2.2rem;
         margin-bottom: 30px;
+        @include breakpoint(pc){
+            font-size: 1.8rem;
+        }
+
 
         p .p-profile__text{
-            font-size: 20px;
+            font-size: 2rem; 
+            @include breakpoint(pc){
+                font-size: 1.5rem;
+            }
+    
+        }
+
+        p{
+            @include breakpoint(pc){
+                line-height: 1.5;
+            }
+    
         }
     }
 }

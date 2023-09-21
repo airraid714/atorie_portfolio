@@ -2,22 +2,12 @@
 
 .c-object{
 
-    &--hand{
-        display: none;
-        
-        @include breakpoint(pc){
-            display: block;
-            width: 45%;
-            position: fixed;
-            right: 6%;
-            top: 7%;
-
-        }
-    }
-
     &--flame{
         width: 100%;
         height: 76px;
+        @include breakpoint(pc){
+            height: 56px;
+        }
     }
 
     &--cage{
@@ -34,5 +24,30 @@
         width: 44px;
         height: 44px;
         border-radius: 50%;
+    }
+
+    &--playground{
+        width: calc(652% / 1440 * 100);
+        min-width: 652px;
+        position: absolute;
+        top: 32%;
+        z-index: 10;
+        left: max(calc(80% - (100vw - 1024px)),50%);
+    }
+
+    &--inco{
+        width: 80px;
+        top: 17%;
+        left: max(calc(110% - (100vw - 1024px)),89%);
+        position: absolute;
+        z-index: 20;
+
+        &-tail{
+            width: 40px;
+            position: absolute;
+            z-index: 9;
+            top: max(calc(38% - (100vw - 1024px)),32%);
+            left: max(calc(111% - (100vw - 1024px)),90%);
+        }
     }
 }

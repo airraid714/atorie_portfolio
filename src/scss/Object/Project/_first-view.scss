@@ -9,6 +9,10 @@
         
         height: 340px;
 
+        @include breakpoint(pc){
+            height: 230px;
+        }
+
         img{
             border-radius: 0 0 200px 200px;
             height: 100%;
@@ -21,11 +25,20 @@
         left: 50%;
         transform: translateX(-50%);
         top: 300px;
+
+        @include breakpoint(pc){
+            top: 200px;
+        }
     }
 
     &__title{
         width: 304px;
         margin: 120px auto 0;
+        
+        @include breakpoint(pc){
+            width: 247px;
+            margin: 85px auto 0;
+        }
 
         
         :last-child{
@@ -43,6 +56,10 @@
 
     &__button{
         margin: 42px auto 0;
+        @include breakpoint(pc){
+            margin: 12px auto 0;
+            transform: scale(0.8) translateX(-10%);
+        }
     }
 
 

@@ -20,12 +20,12 @@
         @include breakpoint(pc){
             margin: 0;
             position: relative;
-            top: 22px;
-            left: 105px;
-            border-radius: 65px;
-            height: 750px;
+            top: 2%;
+            left: 14%;
+            border-radius: 50px;
+            height: 542px;
+            width: 52%;
             background: none;
-
             &::-webkit-scrollbar{
                 display: none;
             }
