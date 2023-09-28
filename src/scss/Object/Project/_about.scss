@@ -1,7 +1,7 @@
 @use "../../Foundation/variable" as *;
 
 .p-about--site{
-    padding: 0 10px 30px;
+    padding: 0 0 30px;
 
     h2{
         width: 100%;
@@ -10,30 +10,24 @@
 
     &__content{
 
-        // :last-child{
-        //     margin-bottom: 0;
-        // }
         
         h3{
-            margin: 0 auto 40px;
+            margin: 0 auto 30px;
         }
 
         p{
             font-size: 2rem;
             margin: 0 auto 30px;
+            width: 90%;
 
             @include breakpoint(pc){
-                font-size: 1.5rem;
+                font-size: 1.8rem;
             }
         }
 
         figure{
-            width: 307px;
+            width: 78%;
             margin: 0 auto 16px;
-
-            @include breakpoint(pc){
-                width: 260px;
-            }
         }
 
 
@@ -45,7 +39,7 @@
                 margin: 0 0 10px 35px;
 
                 @include breakpoint(pc){
-                    margin: 0 0 20px 35px;
+                    margin: 0 0 10px 15px;
                 }
             }
         }
@@ -63,7 +57,7 @@
     }
 
     @include breakpoint(pc){
-        padding: 0 10px 36px;
+        padding: 0 0 36px;
 
         h2{
             width: 100%;

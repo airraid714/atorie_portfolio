@@ -6,10 +6,13 @@
 
 
     &__text{
-        font-size: 20px;
-        width: 332px;
+        font-size: 2rem;
+        width: 90%;
         margin: auto;
 
+        @include breakpoint(pc){
+            font-size: 1.8rem;
+        }
         &--2{
             @extend .p-message__text;
             margin: 10px auto 38px;
@@ -17,11 +20,15 @@
     }
 
     figure{
-        width: 341px;
+        width: 86%;
         margin: -20px auto 0;
     }
 
     &__button{
         margin: auto; 
+        
+        @include breakpoint(pc){
+            transform: scale(0.8) translateX(-10%);
+        }
     }
 }

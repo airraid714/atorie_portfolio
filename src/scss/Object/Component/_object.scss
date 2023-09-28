@@ -15,6 +15,11 @@
         background: url(../../../image/svg/かご.svg),no-repeat;
         width: 358px;
         height: 496px;
+        @include breakpoint(pc){
+            width: 91%;
+            height: 355px;
+            background-size: cover;
+        }
         
     }
 

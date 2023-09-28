@@ -19,9 +19,6 @@
     }
 
     &--mono{
-        width: 235px;
-        @include breakpoint(pc){
-            width: 190px;
-        }
+        width: 60%;
     }
 }

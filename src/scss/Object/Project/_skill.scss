@@ -10,13 +10,13 @@
         margin: 0 auto 40px;
     
         h3{
-            width: 182px;
-            height: 30px;
+            width: 60%;
             margin: 0 auto 42px; 
         }
 
         @include breakpoint(pc){
-            width: 100%
+            width: 92%;
+            padding: 60px 0 30px; 
         }
 
         .p-skill__web{
@@ -43,7 +43,7 @@
                     font-weight: bold;
 
                     @include breakpoint(pc){
-                        font-size: 1rem;
+                        font-size: 1.1rem;
                     }
                 }
     
@@ -57,9 +57,8 @@
     
             li{
                 figure{
-                    margin: auto;
-                    width: 200px;
-                    height: 200px;
+                    margin: 0 auto 20px;
+                    width: 60%;
                 }
             }
     

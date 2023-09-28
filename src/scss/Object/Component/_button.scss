@@ -113,10 +113,19 @@
         width: 238px;
         display: flex;
         justify-content: space-between;
+
+        @include breakpoint(pc){
+            width: 180px;
+        }
     
         button{
             width: 70px;
-            height: 60px;
+            height: 90px;
+
+            @include breakpoint(pc){
+                width: 60px;
+                height: 80px;
+            }
         }
     
 

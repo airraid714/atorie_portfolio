@@ -9,12 +9,11 @@
     margin: 0 auto 40px;
 
     @include breakpoint(pc){
-        width: 100%;
+        width: 92%;
     }
 
     h3{
-       width: 182px;
-       height: 30px;    
+       width: 54%;
        margin: 0 auto 42px; 
 
        @include breakpoint(pc){
@@ -23,14 +22,9 @@
     }
 
     figure{
-        width: 270px;
-        height: 270px;
+        width: 80%;
         margin: 0 auto 40px;
 
-        @include breakpoint(pc){
-            width: auto;
-            height: auto;
-        }
     }
 
     ul{

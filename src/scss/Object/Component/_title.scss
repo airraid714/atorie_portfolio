@@ -3,21 +3,14 @@
 .c-title{
 
     &--atorie{
-        width: 227px;
-        @include breakpoint(pc){
-            width: 180px;
-        }
+        width: 64%;
     }
     &--about-site--side{
         width: 180px;
     }
 
     &--contents{
-        width: 195px;
-
-        @include breakpoint(pc){
-           width: 145px;
-        }
+        width: 50%;
     }
 
     &--about-me--side{
@@ -27,11 +20,8 @@
 
     &--inco{
         display: inline-block;
-        width: 184px;
+        width: 50%;
         
-        @include breakpoint(pc){
-            width: 160px;
-        }
     }
     &--inco--side{
         width: 140px;
@@ -39,17 +29,14 @@
 
     &--web{
         display: inline-block;
-        width: 218px;
-        @include breakpoint (pc){
-            width: 190px;
-        }
+        width: 60%;
     }
     &--web--side{
         width: 163px;
     }
 
     &--message{
-        width: 180px;
+        width: 45%;
         margin: 0 auto 38px;
     }
     &--message--side{
@@ -65,7 +52,10 @@
         &--inco{
             margin: auto;
             text-align: center;
-            font-size: 20px;
+            font-size: 2rem;
+            @include breakpoint(pc){
+                font-size: 1.8rem;
+            }
         }
     }
 

@@ -5,18 +5,25 @@
     padding: 45px 0;
 
     h2{
-        width: 308px;
+        width: 78%;
         margin: 0 auto 40px;
+        @include breakpoint(pc){
+            margin: 0 auto 20px;
+        }
     }
     &__text{
-        width: 290px;
         text-align: center;
-        font-size: 22px;
+        font-size: 2.2rem;
         margin: 0 auto 60px;
+
+        @include breakpoint(pc){
+            font-size: 1.8rem;
+            margin: 0 auto 35px;
+        }
     }
 
     div{
-        margin: 0 auto 60px;
+        margin: 0 auto 45px;
         position: relative;
 
         figure{
@@ -26,6 +33,12 @@
             left: 50%;
             transform: translateX(-50%);
             bottom: 37px;
+
+            @include breakpoint(pc){
+                width: 225px;
+                height: 250px;
+                bottom: -10px;
+            }
 
             img{
                 height: 100%;
@@ -37,5 +50,9 @@
 
     &__button{
         margin: auto;
+
+        @include breakpoint(pc){
+            transform: scale(0.8);
+        }
     }
 }
