@@ -83,6 +83,11 @@
             font-weight: 400;
             color: $black-36;
         }
+
+        @include breakpoint(pc){
+            margin: 12px auto 0;
+            transform: scale(0.8) translateX(-10%);
+        }
     }
 
     &--more{
@@ -138,9 +143,9 @@
     &--dropdown{
          
         background: $orange;
-        width: 300px;
+        width: 76%;
         height: 41px;
-        font-size: 17px;
+        font-size: 1.7rem;
         font-weight: bold;
         color: $black-36;
         border-radius: 10px;

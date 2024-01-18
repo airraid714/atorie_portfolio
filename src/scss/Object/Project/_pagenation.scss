@@ -8,6 +8,11 @@
         display: flex;
         justify-content: space-between;
 
+        @include breakpoint(pc){
+            width: auto;
+        }
+
+
         li{
             display: flex;
             align-items: center;

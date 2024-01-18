@@ -78,6 +78,8 @@ async function animateImages() {
 
 animateImages();
 
+
+
 //メインエリア右側の鳥の遊具の上に止まっているインコがスマホに飛んでくるギミックアニメーション
 
 document.addEventListener("DOMContentLoaded", function() { 
@@ -91,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const thirdImagepath = "./image/svg/fly_inco_up.svg";
 
  document.querySelector(".js-gimmick").addEventListener("click", function() {
-  container.classList.toggle("is-down");
+    container.classList.toggle("is-down");
 
     if (container.classList.contains("is-down")){
 
@@ -129,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
           }
         },
       });
+
     
     } else{
 

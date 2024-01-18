@@ -56,10 +56,23 @@
             background: $yellow;
             border-radius: 10px;
 
+            @include breakpoint(pc){
+                width: 90%;
+                height: auto;
+                display: block;
+                padding: 10px;
+            }
+
             &__img{
                 width: 160px;
                 height: 160px;
                 margin-left: 10px;
+
+                @include breakpoint(pc){
+                    width: auto;
+                    height: auto;
+                    margin-left: 0;
+                }
 
                 img{
                     height: 100%;
@@ -74,6 +87,11 @@
                 height: 160px;
                 line-height: 1;
                 position: relative;
+
+                @include breakpoint(pc){
+                    width: auto;
+                    height: auto;
+                }
                 &__date{
                     font-size: 14px;
                 }
@@ -84,6 +102,10 @@
                 &__text{
                     font-size: 14px;
                     line-height: 1.5;
+
+                    @include breakpoint(pc){
+                        margin-bottom: 40px;
+                    }
                 }
                 &__category{
                     position:absolute;

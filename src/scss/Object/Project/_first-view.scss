@@ -56,10 +56,6 @@
 
     &__button{
         margin: 42px auto 0;
-        @include breakpoint(pc){
-            margin: 12px auto 0;
-            transform: scale(0.8) translateX(-10%);
-        }
     }
 
     &--page{
@@ -68,7 +64,7 @@
 
         &__title{
             position: absolute;
-            width: 216px;
+            width: 60%;
             top: 37%;
             left: 50%;
             transform: translateX(-50%);

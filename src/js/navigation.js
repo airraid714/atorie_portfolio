@@ -7,22 +7,25 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // メニューのリストをクリックするとサイドバーが閉じる
-    document.querySelector(".js-close").addEventListener("click", function() {
-        setTimeout(function() {
-            document.querySelector(".l-sidebar").classList.remove("is-open");
-            document.querySelector(".c-button--hamburger").classList.remove("is-open");
-            document.querySelector(".p-navigation--sidebar").classList.remove("is-open");
-        }, 500);
-    });
+    const closeElements = document.querySelectorAll(".js-close");
+    closeElements.forEach(function(element) {
+        element.addEventListener("click", function() {
+            setTimeout(function() {
+                document.querySelector(".l-sidebar").classList.remove("is-open");
+                document.querySelector(".c-button--hamburger").classList.remove("is-open");
+                document.querySelector(".p-navigation--sidebar").classList.remove("is-open");
+            }, 500);
+        });
+    });1
 
     // ドロップダウンメニューをクリックするとサブメニューが出現
     const dropdownElement = document.querySelector(".js-dropdown");
 
-    if(dropdownElement){
+    if (dropdownElement) {
         dropdownElement.addEventListener("click", function() {
             document.querySelector(".c-button--dropdown").classList.toggle("is-open");
             document.querySelector(".p-navigation--dropdown__content").classList.toggle("is-open");
-    
+
             const listItemElements = document.querySelectorAll(".p-navigation--dropdown__content li");
             listItemElements.forEach(function(li) {
                 li.classList.toggle("is-open");
@@ -31,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     anchorElement.classList.toggle("is-open");
                 }
             });
-        });    
+        });
     }
 });
 

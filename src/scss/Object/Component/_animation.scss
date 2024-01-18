@@ -1,11 +1,22 @@
 @use "../../Foundation/variable" as *;
 
-.c-animation--push{
+@include breakpoint(pc){
     
-    transition: all .2s;
-    &:hover{
-        transform: translateY(4px);
-        box-shadow: none;
+    .c-animation--push{
+        transition: all .2s;
+        &:hover{
+            transform: translateY(4px) scale(0.8) translateX(-10%);
+            box-shadow: none;
+            
+        }
         
+    }
+    .c-animation--push-more{
+        transition: all .2s;
+        &:hover{
+            transform: translateY(4px) scale(0.8) ;
+            box-shadow: none;
+            
+        }
     }
 }
